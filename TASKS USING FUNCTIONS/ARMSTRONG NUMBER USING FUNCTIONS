@@ -1,0 +1,44 @@
+#include<iostream>
+using namespace std;
+
+int armstrong(int x){
+	
+	int orgnum,value,num,result=0;
+	
+	orgnum=num;
+	
+	while(orgnum!=0){
+	
+	value=orgnum%10;
+	result+=value*value*value;
+	orgnum/=10;	
+}
+if(result==num){
+	
+	cout<<"Your number is an armstrong number"<<endl;	
+}
+else{
+	
+	cout<<"Your number is not an armstrong number"<<endl;
+}
+
+return result;
+}
+
+
+int main(){
+	
+	int num;
+
+	
+	 cout<<"Enter a three digit number: ";
+	 cin>>num;
+	 
+	 armstrong(num);
+	
+	
+
+	
+	return 0;
+	
+}
